@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//untuk menghubungkan ke database
+require('./app_server/models/db');
+
 var indexRouter = require('./app_server/routes/index'); //tambahkan app_server
 var usersRouter = require('./app_server/routes/users'); //tambahkan app_server
 
