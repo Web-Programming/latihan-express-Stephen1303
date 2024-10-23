@@ -25,7 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api', mahasiswaRouter); //untuk di panggil di halaman web, ex: (localhost:3000/api)
+//API
+app.use('/api/mahasiswa', mahasiswaRouter); //untuk di panggil di halaman web, ex: (localhost:3000/api)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
