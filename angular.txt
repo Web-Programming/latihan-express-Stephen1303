@@ -1,0 +1,17 @@
+ANGULAR
+
+1. npm install -g @angular/cli (install angular)
+2. ng new belajar_angular (buat project angular)
+2. code . (untuk bukak project ke visual studio)
+4. cd belajar_angular (masuk ke direktori)
+5. ng serve (untuk menjalankan ke server) -> localhost:4200
+6. ng generate component home (untuk install component home)
+   atau
+   // --inline-template (membuat file tanpa .html)
+   > ng g c namaComponent --standalone --inline-template
+   // i -> interface
+   > ng g i namaInterface 
+7. src/app/app.routes.ts
+   tambahkan :
+   import { HomeComponent } from './home/home.component';
+   export const routes: Routes = [ { path: 'home', component:HomeComponent}]; 
