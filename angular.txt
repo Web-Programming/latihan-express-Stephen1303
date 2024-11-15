@@ -9,9 +9,14 @@ ANGULAR
    atau
    // --inline-template (membuat file tanpa .html)
    > ng g c namaComponent --standalone --inline-template
+   
    // i -> interface
    > ng g i namaInterface 
+
+   //ng generate service namaService (buat service)
+   > ng g s namaService
+   
 7. src/app/app.routes.ts
    tambahkan :
    import { HomeComponent } from './home/home.component';
-   export const routes: Routes = [ { path: 'home', component:HomeComponent}]; 
+   export const routes: Routes = [ { path: 'home', component:HomeComponent}];
