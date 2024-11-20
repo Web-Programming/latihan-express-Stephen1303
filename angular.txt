@@ -13,7 +13,8 @@ ANGULAR
    // i -> interface
    > ng g i namaInterface 
 
-   //ng generate service namaService (buat service)
+   //Buat Service (model atau seeder)
+   //ng generate service namaService
    > ng g s namaService
    
 7. src/app/app.routes.ts

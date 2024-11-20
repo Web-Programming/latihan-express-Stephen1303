@@ -10,6 +10,7 @@ require('./app_server/models/db');
 var indexRouter = require('./app_server/routes/index'); //tambahkan app_server
 var usersRouter = require('./app_server/routes/users'); //tambahkan app_server
 var mahasiswaRouter = require('./app_server/routes/mahasiswas'); //tambahkan router mahasiswa
+var housingRouter = require('./app_server/routes/housing'); //tambahkan router mahasiswa
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //API
 app.use('/api/mahasiswa', mahasiswaRouter); //untuk di panggil di halaman web, ex: (localhost:3000/api)
+app.use('/housing', housingRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
