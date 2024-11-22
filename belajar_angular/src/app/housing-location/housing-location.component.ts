@@ -18,5 +18,5 @@ import { RouterModule } from '@angular/router'; //RouterModule dari app.routes.t
   styleUrl: './housing-location.component.css'
 })
 export class HousingLocationComponent {
-  @Input() housingLocation! : HousingLocation //! -> null safety
+  @Input() housingLocation! : HousingLocation readonly baseUrl = 'https://angular.io/assets';//! -> null safety
 }
