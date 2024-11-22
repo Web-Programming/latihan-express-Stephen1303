@@ -54,7 +54,10 @@ export class DetailsComponent {
 
   constructor(){
     this.housingLocationId = Number(this.route.snapshot.params['id']); //buat constructor untuk MENYETTING id sesuai dengan yang dikirim
-    this.housingLocation = this.housingService.getHousingLocationById(this.housingLocationId);
+    // this.housingLocation = this.housingService.getHousingLocationById(this.housingLocationId);
+    this.housingService.getHousingLocationById(this.housingLocationId).then(location => {
+      this.housingLocation = location;
+    })
     console.table(this.housingLocation);
   }
 
